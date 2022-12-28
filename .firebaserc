@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "chaoscards"
+  },
+  "targets": {
+    "ebay-discoveries": {
+      "hosting": {
+        "prod": [
+          "chaoscards"
+        ],
+        "dev": [
+          "chaoscards-dev"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

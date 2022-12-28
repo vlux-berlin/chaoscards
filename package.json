@@ -1,0 +1,37 @@
+{
+  "version": "0.0.1",
+  "name": "chaoscards",
+  "private": true,
+  "description": "Source code for chaoscards, a card app for building new habits. Build with React, Firebase and Tailwind.",
+  "repository": "https://github.com/alex-steinke/chaoscards.git",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build",
+    "dev": "lerna run dev --parallel",
+    "fix": "xo --ignore=packages --fix; lerna run fix --parallel",
+    "lint": "xo --ignore=packages; lerna run lint --parallel",
+    "postinstall": "husky install",
+    "start": "lerna run start --parallel",
+    "test": "lerna run test --parallel"
+  },
+  "xo": {
+    "prettier": true
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.0.0",
+    "husky": "^8.0.2",
+    "lerna": "^5.4.3",
+    "nx": "^14.5.10",
+    "prettier-package-json": "^2.8.0",
+    "xo": "^0.53.1"
+  },
+  "packageManager": "yarn@3.2.1",
+  "engines": {
+    "node": ">=16.14.0"
+  }
+}
